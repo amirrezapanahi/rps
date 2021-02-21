@@ -118,9 +118,9 @@ def main():
         while done != 3:
             countdown()
             human = readchar.readkey()
-            acoustic = ai()
-            results(acoustic, human)
-            done = outcome(acoustic, human, done)
+            airesult = ai()
+            results(airesult, human)
+            done = outcome(airesult, human, done)
 
         if countscores(aiScore, humanScore):
             print("AI wins")
